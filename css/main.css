@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+.bg::before {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 300px;
+}
+
+#clock {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 120px;
+  color: rgba(255, 255, 255, .7);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 50px;
+  /* align-content: center; */
+}
+
+.login-form {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  height: 80px;
+}
+
+.login-form input {
+  display: flex;
+  /* position: relative;
+  justify-content: center; */
+  margin: 15px 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.login-form input::placeholder {
+  color:rgba(255, 255, 255, .7);
+}
+
+.login-form .name {
+  outline: none;
+  color: rgba(255, 255, 255, .7);
+  width: 550px;
+  font-size: 25px;
+}
+
+.login-form .login-btn {
+  font-size: 25px;
+  color:rgba(255, 255, 255, .7)
+}
+
+.greeting {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 30px;
+  color: rgba(255, 255, 255, .7);
+  margin: 15px 0;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+}
+
+#todo-form input {
+  outline: none;
+  color: rgba(255, 255, 255, .7);
+  width: 550px;
+  font-size: 25px;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+}
+
+#todo-form input::placeholder {
+  color:rgba(255, 255, 255, .7);
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgba(255, 255, 255, .7);
+  margin: 10px 0;
+}
+
+#todo-list li button {
+  background: transparent;
+  border: none;
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgba(255, 255, 255, .7);
+  font-size: 20px;
+  position: relative;
+  top: -3px;
+}
+
+.lyrics {
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgba(255, 255, 255, .7);
+  display: flex;
+  justify-content: center;
+}
+
+.lyric {
+  margin-right: 30px;
+}
+
+.weather {
+  font-family: 'Black Han Sans', sans-serif;
+  color: rgba(255, 255, 255, .7);
+  position: fixed;
+  bottom: 15px;
+  /* align-items: center;
+  justify-content: flex-end; */
+}
+
+.city {
+  margin-right: 30px;
+}

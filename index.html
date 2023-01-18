@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script defer src="./js/clock.js"></script>
+  <script defer src="./js/greeting.js"></script>
+  <script defer src="./js/todo.js"></script>
+  <script defer src="./js/lyrics.js"></script>
+  <script defer src="./js/bg.js"></script>
+  <script defer src="./js/weather.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+	<title>MOMENTUM APP</title>
+</head>
+<body>
+  <div class="bg">
+    <div class="box">
+      <h2 id="clock">00:00:00</h2>
+
+      <form class="login-form hidden">
+        <input class= "name" required maxlength="10" type="text" placeholder="이름을 입력해 주세요!" />
+        <input class="login-btn" type="submit" value="log-in!">
+      </form>
+      
+      <h2 class="greeting hidden"></h2>
+
+      <form id="todo-form">
+        <input type="text" placeholder="To-Do List">
+      </form>
+    
+      <ul id="todo-list"></ul>
+
+      <div class="lyrics">
+        <span class="lyric"></span>
+        <span class="singer"></span>
+      </div>
+
+      <div class="weather">
+        <span class="city"></span>
+        <span class="sky"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
